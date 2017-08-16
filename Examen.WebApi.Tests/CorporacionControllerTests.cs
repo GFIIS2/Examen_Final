@@ -107,7 +107,7 @@ namespace Examen.WebApi.Tests
 
             Corporation ultimaCorporacion = (_controlador.TraerPorId(corporacionPrueba) as OkObjectResult).Value as Corporation;
 
-            var resultado = _controlador.Eliminar(ultimaCorporacion) as OkObjectResult;
+            var resultado = _controlador.Eliminar(ultimaCorporacion.Corp_No) as OkObjectResult;
 
             resultado.Should().NotBeNull();
 

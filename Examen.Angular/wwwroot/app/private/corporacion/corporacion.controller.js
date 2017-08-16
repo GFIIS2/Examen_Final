@@ -125,6 +125,14 @@
             vm.isDelete = true;
         }
 
+        function detail() {
+            vm.modalTitle = 'Crear Corporacion';
+            vm.modalButtonTitle = '';
+            vm.readOnly = true;
+            vm.modalFunction = null;
+            vm.isDelete = false;
+        }
+
         function closeModal() {
             angular.element('#modal-container').modal('hide');
         }

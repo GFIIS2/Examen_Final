@@ -5,7 +5,7 @@ namespace Examen.Automatizacion
 {
     public class LoginPage
     {
-        const string url = "http://localhost:57264/"; // Ejecutar el proyecto angular sin depurar
+        const string url = "http://localhost/ExamenAngular/"; // Ejecutar el proyecto angular sin depurar
 
         private readonly IWebDriver _driver;
 
@@ -45,8 +45,8 @@ namespace Examen.Automatizacion
 
         public void RegisterDataLogin_OK()
         {
-            userNameText.SendKeys("daniel@quintana.com");
-            passwordText.SendKeys("prueba");
+            userNameText.SendKeys("gryauri@gmail.com");
+            passwordText.SendKeys("123456789");
         }
 
         public void RegisterDataLogin_ERROR()

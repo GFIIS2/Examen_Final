@@ -1,10 +1,11 @@
 ﻿using Examen.UnidadDeTrabajo;
 using Examen.Modelos;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Examen.WebApi.Controllers
-{
-    [Route("corporacion")]
+{    
+    [Route("corporacion")]      
     public class CorporacionController : BaseController
     {
         public CorporacionController(IUnidadTrabajo unidad) : base(unidad)
